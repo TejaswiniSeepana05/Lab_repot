@@ -3,6 +3,9 @@ import pdfplumber
 from groq import Groq
 
 app = Flask(__name__)
+client = Groq(
+    api_key="xxxxxxxxx"
+)
 
 SYSTEM_PROMPT = """
 You are a medical lab report analysis assistant.
