@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: #141414;
+    border-bottom: 1px solid #00ffff;
+}
+
+nav a {
+    color: #00ffff;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff00ff;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 22px;
+    color: #00ffff;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.upload-container {
+    margin: 60px auto;
+    width: 380px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px dashed #00ffff;
+    text-align: center;
+    background: #1a1a1a;
+    transition: 0.3s;
+}
+
+.upload-container:hover {
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.upload-container input {
+    margin-bottom: 20px;
+}
+
+.upload-container button {
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.upload-container button:hover {
+    transform: scale(1.05);
+}
+
+.login-wrapper {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 350px;
+    padding: 40px;
+    background: #111;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0,255,255,0.1);
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #1a1a1a;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-box input:focus {
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 6px #00ffff;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.result-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.analysis-box {
+    width: 60%;
+    padding: 30px;
+    border-radius: 15px;
+    background: #1a1a1a;
+}
+
+.visual-box {
+    width: 25%;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    background: #1a1a1a;
+}
+
+.high {
+    border-left: 5px solid red;
+}
+
+.medium {
+    border-left: 5px solid orange;
+}
+
+.good {
+    border-left: 5px solid #00ff88;
+}
+
+.risk-indicator {
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.risk-indicator.high {
+    background: rgba(255,0,0,0.2);
+    color: red;
+}
+
+.risk-indicator.medium {
+    background: rgba(255,165,0,0.2);
+    color: orange;
+}
+
+.risk-indicator.good {
+    background: rgba(0,255,136,0.2);
+    color: #00ff88;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+.disclaimer {
+    font-size: 12px;
+    margin-top: 20px;
+    color: gray;
+}
+.card {
+    max-width: 600px;
+    margin: 120px auto; 
+    padding: 40px;
+    border-radius: 20px;
+    background: #1a1a1a;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+    animation: fadeIn 0.5s ease-in-out;
+}
+.center-wrapper {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
