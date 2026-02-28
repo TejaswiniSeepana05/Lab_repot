@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Report Intelligence Agent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🧬 Lab Report Intelligence Agent</h1>
+    <p class="subtitle">AI-powered Medical Report Analysis</p>
+
+    <form method="POST" enctype="multipart/form-data">
+        <div class="upload-box">
+            <input type="file" name="file" required>
+            <button type="submit">Analyze Report</button>
+        </div>
+    </form>
+
+    {% if result %}
+    <div class="result-card">
+        <h2>📊 AI Analysis Result</h2>
+        <pre>{{ result }}</pre>
+
+        <p style="font-size:12px; color:gray; margin-top:15px;">
+        This AI analysis is for informational purposes only and does not replace professional medical advice.
+        </p>
+
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="hero">
+    <h1>AI-Powered Lab Report Intelligence</h1>
+    <p>Advanced Medical Analysis using LLM Technology</p>
+</div>
+
+<form action="/analyze" method="POST" enctype="multipart/form-data">
+    <div class="upload-container">
+        <input type="file" name="file" required>
+        <button type="submit">Analyze with AI</button>
+    </div>
+</form>
+
+{% endblock %}

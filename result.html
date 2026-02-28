@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="result-wrapper">
+
+    <div class="analysis-box {{ risk }}">
+        <h2>AI Analysis Report</h2>
+        <pre>{{ result }}</pre>
+
+        <p class="disclaimer">
+        This AI analysis is for informational purposes only.
+        Consult a medical professional for clinical decisions.
+        </p>
+    </div>
+
+    <div class="visual-box {{ risk }}">
+        <h3>Risk Level</h3>
+        {% if risk == "high" %}
+            <div class="risk-indicator high">⚠ HIGH RISK</div>
+        {% elif risk == "medium" %}
+            <div class="risk-indicator medium">⚡ MODERATE</div>
+        {% else %}
+            <div class="risk-indicator good">✔ GOOD</div>
+        {% endif %}
+    </div>
+
+</div>
+
+{% endblock %}
