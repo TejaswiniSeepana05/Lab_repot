@@ -1,0 +1,17 @@
+Normal Medical Benchmarks
+
+Hemoglobin:
+Male: 13.8 – 17.2 g/dL
+Female: 12.1 – 15.1 g/dL
+
+WBC:
+4000 – 11000 cells/mcL
+
+Platelets:
+150000 – 450000 per mcL
+
+Blood Glucose (Fasting):
+70 – 99 mg/dL
+
+Cholesterol (Total):
+Less than 200 mg/dL
